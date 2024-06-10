@@ -8,7 +8,7 @@ public class Categoria
  {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int id { get; set; }
+    public int Id { get; set; }
 
    [Required(ErrorMessage = "Informe o Nome da Categoria")]
    [StringLength(30, ErrorMessage = "O Nome deve possuir até 30 caracteres")]

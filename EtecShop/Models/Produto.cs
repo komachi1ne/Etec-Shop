@@ -9,7 +9,7 @@ public class Produto
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int id { get; set; }
+    public int Id { get; set; }
 
     [Required(ErrorMessage = "Informe o Nome do Produto")]
     [StringLength(100, ErrorMessage = "O Nome deve possuir até 100 caracteres")]
@@ -31,6 +31,7 @@ public class Produto
     [Display(Name = "Categoria")]
     [Required(ErrorMessage = "Informe a Categoria")]
     public int CategoriaId { get; set; }
+    public Categoria Categoria { get; set; }
 
     [StringLength(300)]
     public string Foto { get; set; }
