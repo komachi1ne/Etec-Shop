@@ -76,31 +76,31 @@ public class AppDbContext : IdentityDbContext
         #region Popular Categorias
         List<Categoria> categorias = new(){
             new Categoria() {
-                id = 1,
+                Id = 1,
                 Nome = "Livros e papelaria"
             },
             new Categoria() {
-                id = 2,
+                Id = 2,
                 Nome = "Games e Pc Gamer"
             },
               new Categoria() {
-                id = 3,
+                Id = 3,
                 Nome = "Informática"
             },
               new Categoria() {
-                id = 4,
+                Id = 4,
                 Nome = "Smartphones"
             },
               new Categoria() {
-                id = 5,
+                Id = 5,
                 Nome = "Eletrodomesticos e Casa"
             },
               new Categoria() {
-                id = 6,
+                Id = 6,
                 Nome = "Beleza e Perfumaria"
             },
               new Categoria() {
-                id = 7,
+                Id = 7,
                 Nome = "Móveis e Decoração"
             },
         };
@@ -111,7 +111,7 @@ public class AppDbContext : IdentityDbContext
         List<Produto> produtos = new()
         {
             new Produto(){
-                id = 1,
+                Id = 1,
                 Nome = "Livro - A biblioteca da Meia-Noite - 8º Ed.",
                 Descricao = "A biblioteca da Meia-Noite é um romance incrível que fala dos infinitos rumos que a vida pode tomar e da busca incessante pelo rumo certo. Aos 35 anos, Nora Seed é uma mulher cheia de talentos e poucas conquistas.",
                 Preco = 34.99M,
@@ -120,7 +120,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/1.png"
             },
             new Produto(){
-                id = 2,
+                Id = 2,
                 Nome = "Box Trilogia Sombra e Ossos - 1º Ed",
                 Descricao = " Entre no Grishaverso: visite, em Ravka, um mundo de magia e superstição, onde nem tudo é o que parece ser! Os três livros da aclamada Trilogia Sombra e ossos que originou a série da Netflix, agora reunidos em um box especial.",
                 Preco = 144.54M,
@@ -129,7 +129,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/2.png"
             },
              new Produto(){
-                id = 3,
+                Id = 3,
                 Nome = "Console Playstation 5 + God Of War Ragnarok",
                 Descricao = " Play Has No Limits™ Jogar Não Tem Limites PlayStation®5. O console PS5™ oferece novas possibilidades de jogabilidade que você nunca imaginou. Reproduza jogos para PS5 e PS4 em Blu-ray Disc. Além disso, você também pode baixar jogos ...",
                 Preco = 3699.99M,
@@ -138,7 +138,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/3.png"
             },
              new Produto(){
-                id = 5,
+                Id = 5,
                 Nome = "Notebook 2 Em 1 Positivo Duo C4128b-3",
                 Descricao = " Notebook 2 Em 1 Positivo Duo C4128b-3 Intel Celeron Dual Core Windows11 Home 11,6' - Cinza Escuro - Inclui Microsoft 365* Notebook 2 em 1 Positivo Duo C4128B-3 Intel Celeron Dual Core Windows11 Home 11,6' - Cinza Escuro.",
                 Preco = 1439.10M,
@@ -147,7 +147,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/5.png"
             },
              new Produto(){
-                id = 6,
+                Id = 6,
                 Nome = "Conjunto Mesa De Jantar 6 Lugares Milano Amêndoa Com Savana",
                 Descricao = " Conjunto Mesa De Jantar 6 Lugares Milano Amêndoa Com Savana Conjunto com 6 Cadeiras Milano Conjunto com 6 Cadeiras Milano da Poliman Moveis: nossos modelos de cadeiras sao praticos e resistentes.",
                 Preco = 521.10M,
@@ -156,7 +156,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/6.png"
             },
              new Produto(){
-                id = 7,
+                Id = 7,
                 Nome = "Smartphone Motorola Moto G04 4g 128gb Tela 6.6' 4gb Ram Câmera 16mp Selfie 5mp - Grafite",
                 Descricao = " O novo Moto G04 foi projetado para impressionar com cores vibrantes, material superior e detalhes lindos. Beleza em alto nível! Feito com material de padrão elevado, é fino e confortável ao toque.",
                 Preco = 699M,
@@ -165,7 +165,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/7.png"
             },
              new Produto(){
-                id = 8,
+                Id = 8,
                 Nome = "Cervejeira Consul Mais 82 Litros Frost Free Czd12at Titanium - 220v",
                 Descricao = " Com uma Cervejeira Consul Mais você não precisa mais se preocupar se suas cervejas vão congelar ou se elas não vão ficar geladas na hora que o pessoal chegar. Você pode mudar a configuração das prateleiras da sua Cervejeira.",
                 Preco = 2166.03M,
@@ -174,7 +174,7 @@ public class AppDbContext : IdentityDbContext
                 Foto = "/img/produtos/8.png"
             }
         };
-        builder.Entity<Produto>().HasData(Produtos);
+        builder.Entity<Produto>().HasData(produtos);
         #endregion
     }
 }
